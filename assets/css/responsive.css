@@ -1,0 +1,228 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 70px;
+        --navbar-height: 0;
+    }
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .header__search-info {
+        width: 70%;
+    }
+
+   
+    .header__cart-info {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+        padding: 0 100px;
+       
+    }
+
+    .header__cart-info::before {
+        border-color: transparent;
+        border-width: 20px 80px;
+        right: 56px;
+    }
+    .header__cart-list {
+        list-style: none;
+        overflow-y: auto;
+        max-height: 25vh;
+    }
+    .container {
+        margin-top: 70px;
+        padding: 8px;
+    }
+
+    .home-pagination-item {
+        margin: 0 15px;
+    }
+
+    .header__sort-tablet-mobile {
+        display: flex;
+    }
+    .mobile-category__list { 
+        display: flex;
+    }
+}
+
+/*Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__cart {
+        width: 80px;
+        text-align: right;
+        top: -11px;
+    }
+    
+    .header__cart-quantity {
+        right: -11px;
+    }
+
+    .header__search {
+        max-width: 450px;
+    }
+    .header__search-input {
+        width: 80%;
+    }
+
+    .header-with-search {
+        position: relative;
+        top: 4px;
+    }
+    .header-cart:hover {
+        height: 80px;
+    }
+
+    .policy-des {
+        margin-top: 20px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-with-search {
+        justify-content: space-between;
+    }
+
+    .header__cart,
+    .header__logo {
+        width: unset;
+    }
+
+    .header__cart {
+        position: relative;
+        top: -10px;
+        left: -14px;
+    }
+
+    .header__cart-quantity {
+        position: relative;
+        left: -8px;
+        top: -12px;
+    }
+
+    .header__cart-info {
+        padding: 0;
+    }
+    .header__logo-img {
+        position: relative;
+        top: 7px;
+        width: 50%;
+        right: -74px;
+    }
+
+    .header__search {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        border-bottom: 0 1px 2px rgba(0, 0, 0, 0.9);
+        padding: 0 16px;
+        animation: searchMobileSlideIn linear 0.3s;
+        display: none;
+    }
+
+    .header__search-info {
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .header__mobile-search {
+        display: block;
+        position: relative;
+        top: 5px;
+    }
+
+
+    @keyframes searchMobileSlideIn {
+        from {
+            opacity: 0;
+            top: calc(var(--header-height)/2);
+        }
+        to {
+            opacity: 1;
+            top: var(--header-height);
+        }
+    }
+    .home-product-wrap { 
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .home-pagination-item {
+        margin: 0;
+    }
+
+    .shopee-more {
+        margin-left: 10px;
+    }
+    .footer-image-wrap {
+        justify-content: center;
+    }
+
+    .footer-image-item-wrap {
+        width: 9rem;
+        height: 6rem;
+    }
+
+    .mobile-follow-footer {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .footer-heading,
+    .footer-item {
+        text-align: center;
+    }
+    
+    .footer-app {
+        display: block;
+    }
+    .footer-app-item {
+        position: relative;
+        right: 50%;
+        left: 36%;
+        margin-top: 10px;
+    }
+
+    .policy-copyright,
+    .policy-des {
+        text-align: center;
+    }
+    .grid-policy {
+        margin: 0 10px;
+        display: block;
+    }
+    .policy-des {
+        margin-top: 10px;
+    }
+    .footer-policy {
+        text-align: center;
+    }
+    .shopee-destination {
+       padding: 0 20px;
+    }
+}
+
+
